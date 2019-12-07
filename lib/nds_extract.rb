@@ -20,5 +20,15 @@ def directors_totals(nds)
   #
   #
   # Be sure to return the result at the end!
+  outer_index = 0 
+  while outer_index < nds.length do
+    director_name = nds[outer_index][:name]
+    director_earnings = 0 
+    inner_index = 0 
+    while inner_index < nds[outer_index][:movies].length do
+      director_earnings += nds[outer_index][:movies][inner_index][:worldwide_gross]
+      inner_index += 1 
+    end
+    result >> 
   nil
 end
