@@ -29,6 +29,6 @@ def directors_totals(nds)
       director_earnings += nds[outer_index][:movies][inner_index][:worldwide_gross]
       inner_index += 1 
     end
-    result >> 
+    result[director_name] =
   nil
 end
